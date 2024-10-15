@@ -1,7 +1,6 @@
 import login from "../../../assets/login.png";
 import Image from "next/image";
-import React from "react";
-
+import { FiUser, FiLock } from "react-icons/fi";
 
 const Login = () => {
   return (
@@ -30,12 +29,16 @@ const Login = () => {
                 >
                   Email Address
                 </label>
-                <input
-                  className="shadow appearance-none border rounded-[28px] w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="email"
-                  type="email"
-                  placeholder="Enter your email"
-                />
+                <div className="flex items-center border border-[#B9BBB8] rounded-[28px] w-full py-2 px-3">
+                    <FiUser className="text-gray-500 mr-2" />
+  <input
+    className="flex-1 bg-transparent text-gray-700 leading-tight focus:outline-none"
+    id="email"
+    type="email"
+    placeholder="Enter your email"
+  />
+</div>
+
               </div>
               <div className="mb-4">
                 <label
@@ -44,16 +47,20 @@ const Login = () => {
                 >
                   Password
                 </label>
-                <input
-                  className="shadow appearance-none border rounded-[28px] w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="password"
-                  type="password"
-                  placeholder="Enter your password"
-                />
-                <p className="text-center">Forgot password?</p>
+                
+                <div className="flex items-center border border-[#B9BBB8] rounded-[28px] w-full py-2 px-3">
+  <FiLock className="text-gray-500 mr-2" />
+  <input
+    className="flex-1 bg-transparent text-gray-700 leading-tight focus:outline-none"
+    id="password"
+    type="password"
+    placeholder="Enter your password"
+  />
+</div>
+                <p className="text-center text-[16px] text-[#3F4346] font-semibold mt-2">Forgot password?</p>
               </div>
 
-              <div className="flex flex-col items-center justify-between">
+              <div className="flex flex-col items-center justify-between mt-8">
                 <button
                   className="bg-[#70726F] w-full text-[16px] text-[#FFFFFF] font-semibold py-2 px-4 rounded"
                   type="button"
