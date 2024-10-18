@@ -38,7 +38,6 @@ export const theme = createTheme({
           fontWeight: "600",
           borderRadius: "7px",
           height: "47px",
-          maxWidth: "200px",
           width: "100%",
           outline: "none",
           border: "none",
